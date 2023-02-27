@@ -27,10 +27,14 @@
             <ul class="artist">
                 <li class="main_img"><img src="${pageContext.request.contextPath}/static/img/tenthen.gif" alt="logo img"></li>
                 <li><a href="#"><img src="${pageContext.request.contextPath}/static/img/Artist01.jpg" alt="artistImg"></a></li>
-                <li><a href="#"><img src="${pageContext.request.contextPath}/static/img/Artist01.jpg" alt="artistImg"></a></li>
-                <li><a href="#"><img src="${pageContext.request.contextPath}/static/img/Artist01.jpg" alt="artistImg"></a></li>
-                <li><a href="#"><img src="${pageContext.request.contextPath}/static/img/Artist01.jpg" alt="artistImg"></a></li>
-                <li><a href="#"><img src="${pageContext.request.contextPath}/static/img/Artist01.jpg" alt="artistImg"></a></li>
+                <li><a href="#"><img src="${pageContext.request.contextPath}/static/img/Artist02.jpg" alt="artistImg"></a></li>
+                <li><a href="#"><img src="${pageContext.request.contextPath}/static/img/Artist03.jpg" alt="artistImg"></a></li>
+                <li><a href="#"><img src="${pageContext.request.contextPath}/static/img/Artist04.jpg" alt="artistImg"></a></li>
+                <li><a href="#"><img src="${pageContext.request.contextPath}/static/img/Artist05.jpg" alt="artistImg"></a></li>
+                <li><a href="#"><img src="${pageContext.request.contextPath}/static/img/Artist06.jpg" alt="artistImg"></a></li>
+                <li><a href="#"><img src="${pageContext.request.contextPath}/static/img/Artist07.jpg" alt="artistImg"></a></li>
+                <li><a href="#"><img src="${pageContext.request.contextPath}/static/img/Artist08.jpg" alt="artistImg"></a></li>
+                <li><a href="#"><img src="${pageContext.request.contextPath}/static/img/Artist09.jpg" alt="artistImg"></a></li>
               
             </ul>
         </div>

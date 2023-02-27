@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.demo.mapper.CategoryMapper">
+	<resultMap id="CategoryResult" type="com.study.demo.model.Category">
+		<result column="c_idx" property="c_idx" />
+		<result column="c_name" property="c_name" />
+		<result column="c_display" property="c_display" />
+		<result column="c_ageLimit" property="c_ageLimit" />
+	</resultMap>
+	<select id="c_select" resultMap="CategoryResult" 
+	parameterType="java.util.Map"> 
+		SELECT * FROM tencategory where c_name LIKE CONCAT('%',#{c_name},'%')
+	</select>
+	<select id="c_selectAll" resultMap="CategoryResult" parameterType="java.util.Map" >
+		SELECT * FROM tencategory
+	</select>
+
+	<insert id="c_insert" parameterType="com.study.demo.model.Category">
+		INSERT INTO tencategory VALUES(
+		c_idx,
+		#{c_name},
+		#{c_display},
+		#{c_ageLimit}
+		)
+	</insert>
+
+	<update id="c_update" parameterType="com.study.demo.model.Category">
+		UPDATE tencategory
+		SET
+		c_name=#{c_name},
+		c_display=#{c_display},
+		c_ageLimit=#{c_ageLimit}
+		WHERE c_idx=#{c_idx}
+	</update>
+
+	<delete id="c_delete" parameterType="String">
+		DELETE FROM tencategory
+		WHERE c_idx=#{c_idx}
+	</delete>
+
+</mapper>
