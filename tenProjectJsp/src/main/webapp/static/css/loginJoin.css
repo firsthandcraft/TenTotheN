@@ -1,0 +1,45 @@
+
+/*  */
+.tabMenu{display:flex;justify-content:center;}
+.tabMenu li{width:150px;margin:0 8px; padding:10px;position:relative;text-align:center;transition:200ms;}
+.tabMenu li:after{content:"";width:0;height:2px;background:#fff;position:absolute;bottom:-2px;left:0;transition:300ms;}
+.tabMenu li:hover:after,.tabMenu .on:after{width:100%;}
+/* form */
+.formWrap{display:flex;justify-content:center;}
+.formWrap form{width:30%;}
+.loginForm{margin:100px 0;}
+.inputWrap{padding:100px 0;margin:0 auto; display:flex;justify-content:center;}
+.editInput{width:30%;}
+.inputList li{margin:20px 0 16px;text-align:center;}
+.inputLable {width:100%;display:block;position:relative;border-bottom:2px solid #fff;}
+.inputList input{width:calc(100% - 6px);padding:4px 20px 4px 4px;margin-bottom:6px; background-color:#000;border:none;font-size:16px;color:#fff;}
+.inputList input[type=checkbox]{width:16px;padding:0;margin:0 0 0 10px;}
+.inputLable span{position:absolute;bottom:calc(50% - 8px);right:1px; font-size:20px;z-index:900;}
+/* address */
+.addressWrap,.postCodeWrap,.telWrap{display:flex;}
+.postCodeWrap .inputLable{width:30%;margin-right:10px;}
+.addressWrap .inputLable{width:88%;}
+.addressPostBtn{padding:0 8px; border:1px solid #fff;border-radius:4px;}
+#sample6_extraAddress{width:30%;padding:4px 4px 4px 10px;}
+/* tel */
+.telWrap label{width:18%;margin:0 6px;}
+/* cv */
+.sellerView textarea{width:100%; border:2px solid #fff;appearance:none;background-color:#000;font-size:16px;color:#fff;}
+/* checkbox *//* agreementWrap deco*/
+.checkWrap{width:100%;margin:10px 0; display:flex;justify-content:space-between;}
+.checkWrap span,.agreementLink a{font-size:10px;}
+.agreementWrap{display:flex;justify-content:space-between;flex-wrap:wrap;}
+/* login BTN & join BTN */
+.logInBtn,.editBtn{width:100%;padding:10px 0;margin:10px 0; border:1px solid #fff;color:#999;font-size:14px; transition:300ms;}
+.joinBtn{width:100%;padding:10px 0;margin:10px 0; border:1px solid #222;color:#222;font-size:14px; transition:300ms;}
+/*  img*/
+.profileImg{color:#888;text-align:left;}
+ /*  birth*/
+/*.inputLable input[name="birth"]::after{content:"!";color:#fff;background:pink;}*/
+
+/* a link */
+.toFind{display:flex;justify-content:space-between;}
+.toLogin{display:flex; justify-content: end;}
+.toFind li,.toLogin li{display:flex;}
+.toFind li p,.toLogin li a,.toFind li a{font-size:14px;color:#999;transition:300ms;}
+.logInBtn:hover,.toFind li a:hover,.toLogin li a:hover{color:#fff;}

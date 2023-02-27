@@ -1,0 +1,38 @@
+    @charset "utf-8";
+    @keyframes rotate{
+        0%{rotate:180deg;}
+        100%{rotate:0deg;}
+    }
+    @keyframes rotateReverse{
+        0%{rotate:-180deg;}
+        100%{rotate:0deg;}
+    }
+    header li,header li a,header li span,header p,header p span{color:#fff;}
+    .headerWrap{width:220px;height:100vh; padding:24px;background-color:#000;position:relative;}
+    /* logo */
+    .logo{width:100%;margin-bottom:24px;display:flex;justify-content:center; opacity:0.8;}
+    /* profile */
+    .profile{display:flex;margin-bottom:30px;}
+    .profileImg{width:40px;height:40px;}
+    .profileImg span{font-size:40px;color:#fff;}
+    .profileImgWrap{width:100%;overflow:hidden;border-radius:50%;}
+    .profileImg img{}
+    .profileName{margin-left:14px;display:flex;align-items:center;font-size:14px;font-weight:500;}
+    .down{margin-left:12px;}
+    /* profile submenu */
+    .profileSubMenu{ width:160px;padding:10px; position:absolute;top:124px;left:54px; font-size:12px;background-color:rgb(41, 41, 41);box-shadow: 2px 2px 10px rgb(60, 60, 60);border-radius:6px;}
+    .profileSubMenu ul{display:flex;justify-content:space-between;}
+    .profileSubMenu ul a{color:#999;transition:400ms;}
+    .profileSubMenu ul a:hover{color:#fff;}
+    .rotate{animation:rotate 0.3s linear normal 1 ;transform:rotate(180deg);}
+    .rotateReverse{animation:rotateReverse 0.3s linear normal 1 ;transform:rotate(0deg);}
+    /* 목록 */
+    nav a{width:100%; display:flex;align-items:center;}
+    nav a span{margin-right:8px;}
+    .list>li{margin:20px 0;font-weight:500;}
+    .list>li>a{margin-bottom:10px;}
+    /* 서브 목록 */
+    .subList{display:none;}
+    .subList>li{padding:2px 0 2px 38px;font-size:15px;font-weight:400;transition:400ms;}
+    .subList>li:hover{background:rgb(23, 23, 23);border-radius:10px;}
+    .copy{position:absolute;bottom:24px;font-size:10px;color:#999;}

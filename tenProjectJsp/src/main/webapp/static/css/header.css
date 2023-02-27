@@ -1,0 +1,10 @@
+@charset "UTF-8";
+    .logo{width:42px;}
+    .textLogo{width:150px;}
+    .headerWrap{width:100%;height:80px; padding:20px 40px 10px;display:flex;justify-content:space-between;align-items:center;background-color:#000;}
+    .navigation{display:flex;}
+    .navMenu{position:relative;}
+    .subnav{position:absolute;}
+    .navigation a{margin:8px;}
+    .navigation a span{color:#fff;font-size:30px;}
+    .subnav{display:none;}

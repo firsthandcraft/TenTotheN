@@ -1,0 +1,14 @@
+@charset "UTF-8";
+main{padding:20px 100px 0;}
+/* tab menu */
+.tabMenu{height:88px;}
+.tabMenu,.subMenu{display:flex;}
+.tabMenu li{padding:10px 30px;}
+.artistList,.productList{display:flex;justify-content:center;flex-wrap:wrap;}
+.productList li,.artistList li{width:172px;height:172px;margin:16px;}
+
+.productList {width:100%;padding:0 60px;overflow:hidden;}
+.productList>li>a,.productList>li>a>img,.productList>li>a span{width:100%;height:100%;}
+.artistList li a,.productList li a{position:relative;}
+.artistList li span,.productList li span{display:none;}
+.artistList li a:hover span,.productList li a:hover span{width:100%;height:100%;display:flex;justify-content:center;align-items:center;position:absolute;top:0;left:0;background-color:rgba(0, 0, 0, 0.5);backdrop-filter:blur(4px);}

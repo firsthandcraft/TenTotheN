@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.demo.mapper.ProductMapper">
+	<resultMap id="ProductResult" type="com.study.demo.model.Product">
+		<result column="p_idx" property="p_idx" />
+		<result column="p_category" property="p_category" />
+		<result column="p_name" property="p_name" />
+		<result column="p_img" property="p_img" />
+		<result column="p_content" property="p_content" />
+		<result column="p_display" property="p_display" />
+		<result column="p_quantity" property="p_quantity" />
+		<result column="p_price" property="p_price" />
+		<result column="p_ageLimit" property="p_ageLimit" />
+		<result column="p_option" property="p_option" />
+		<result column="p_optionPrice" property="p_optionPrice" />
+		<result column="p_permission" property="p_permission"/>
+		<result column="p_permissionReason" property="p_permissionReason"/>
+	</resultMap>
+
+	<select id="p_select" resultMap="ProductResult" 
+	parameterType="String">
+		SELECT * FROM tenproduct where p_idx = #{p_idx}
+	</select>
+	<select id="p_search" resultMap="ProductResult" 
+	parameterType="java.util.Map"> 
+		SELECT * FROM tenproduct where p_name LIKE CONCAT('%',#{p_name},'%')
+	</select>
+	<select id="p_selectAll" resultMap="ProductResult" parameterType="java.util.Map"  >
+		SELECT * FROM tenproduct
+	</select>
+
+	<insert id="p_insert" parameterType="com.study.demo.model.Product">
+		INSERT INTO tenproduct VALUES(
+		p_idx,
+		#{p_category},
+		#{p_name},
+		#{p_img},
+		#{p_content},
+		#{p_display},
+		#{p_quantity},
+		#{p_price},
+		#{p_ageLimit},
+		#{p_option},
+		#{p_optionPrice},
+		#{p_permission},
+		#{p_permissionReason}
+		)
+	</insert>
+
+	<update id="p_update" parameterType="com.study.demo.model.Product">
+		UPDATE tenproduct
+		SET
+		p_category=#{p_category},
+		p_name=#{p_name}, 
+		p_img=#{p_img}, 
+		p_content=#{p_content}, 
+		p_display=#{p_display},
+		p_quantity=#{p_quantity},
+		p_price=#{p_price},
+		p_ageLimit=#{p_ageLimit},
+		p_option=#{p_option},
+		p_optionPrice=#{p_optionPrice},
+		p_permission=#{p_permission},
+		p_permissionReason=#{p_permissionReason}
+		WHERE p_idx=#{p_idx}
+	</update>
+
+	<delete id="p_delete" parameterType="String">
+		DELETE FROM tenproduct
+		WHERE p_idx=#{p_idx}
+	</delete>
+
+</mapper>

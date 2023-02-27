@@ -1,0 +1,18 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+main{padding:20px 200px 0;}
+.pInfo form{display:flex;justify-content:space-between;}
+.pInfo section{width:45%;}
+.description p{display:flex;}
+.description span{margin-left:10px;}
+.buyForm{margin-top:30px;}
+.buyForm .title{margin-bottom:10px; padding:14px 0 8px;border-bottom:1px solid #999;}
+.quantity>div{display:flex;justify-content:space-between;}
+.total>p:last-child{justify-content:right;}
+.buyBtn{margin-top:30px; display:flex;justify-content:space-between;}
+.buyBtn button{width:35%;padding:10px;margin:0 4px; border:1px solid #fff;transition:300ms;}
+.buyBtn button:last-child{width:15%;}
+.buyBtn button:hover{background-color:#fff;color:#000;}
+.productWrap{margin:80px 0;}
+
